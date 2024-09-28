@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма валидации и новости</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Форма валидации и добавление новостей</h1>
+
+
+    <form id="validation-form">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" placeholder="Введите имя">
+        <div class="error-message" id="name-error"></div>
+
+        <label for="birth-year">Год рождения:</label>
+        <input type="text" id="birth-year" placeholder="Введите год рождения">
+        <div class="error-message" id="birth-year-error"></div>
+
+        <button type="submit">Отправить</button>
+    </form>
+
+
+    <h2>Добавить новость</h2>
+    <form id="news-form">
+        <label for="news-title">Название новости:</label>
+        <input type="text" id="news-title" placeholder="Введите название новости">
+        <div class="error-message" id="title-error"></div>
+
+        <label for="news-text">Текст новости:</label>
+        <textarea id="news-text" placeholder="Введите текст новости"></textarea>
+        <div class="error-message" id="text-error"></div>
+
+        <button type="submit">Добавить новость</button>
+    </form>
+
+
+    <h2>Новости</h2>
+    <div id="news-list"></div>
+
+
+    <button id="dark-mode">Тёмный фон (b)</button>
+    <button id="light-mode">Светлый фон (w)</button>
+
+    <script src="Js/main.js"></script>
+</body>
+</html>
